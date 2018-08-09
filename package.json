@@ -1,0 +1,43 @@
+{
+    "name"       : "508-view",
+    "version"    : "1.0.0",
+    "license"    : "MIT",
+    "description": "Modifies a web site to quickly view common 508/accessibility issues. Attempts to present your website the way a user of a screen reader would interpret it.",
+    "repository" : "github:agroff/508-view.git",
+    "main"       : "lib/508-view.js",
+    "author"     : {
+        "name" : "Andrew Groff",
+        "email": "andy@groff.cc",
+        "url"  : "https://groff.cc"
+    },
+    "keywords" : [
+        "accessibility",
+        "508"
+    ],
+    "scripts"    : {
+        "build": "webpack --env dev && webpack --env build && npm run test",
+        "dev": "webpack --progress --colors --watch --env dev",
+        "test": "mocha --require babel-register --colors ./test/*.spec.js",
+        "test:watch": "mocha --require babel-register --colors -w ./test/*.spec.js"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.0.0-beta.51",
+        "@babel/core": "^7.0.0-beta.51",
+        "@babel/preset-env": "^7.0.0-beta.51",
+        "babel-eslint": "^8.0.3",
+        "babel-loader": "^8.0.0-beta.4",
+        "babel-plugin-add-module-exports": "^0.2.1",
+        "babel-preset-env": "^7.0.0-beta.3",
+        "babel-register": "^7.0.0-beta.3",
+        "chai": "^4.1.2",
+        "eslint": "^5.0.1",
+        "eslint-loader": "^2.0.0",
+        "jsdom": "11.11.0",
+        "jsdom-global": "3.0.2",
+        "mocha": "^4.0.1",
+        "uglifyjs-webpack-plugin": "^1.2.7",
+        "webpack": "^4.12.2",
+        "webpack-cli": "^3.0.8",
+        "yargs": "^10.0.3"
+    }
+}

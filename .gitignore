@@ -1,3 +1,10 @@
+#IDE/OS
+.idea
+.DS_Store
+
+#library starter pack used for reference
+webpack-library-starter
+
 # Logs
 logs
 *.log
