@@ -31,7 +31,7 @@ like this:
     var ScreenReaderView = window["508-view"];
     new ScreenReaderView().run();
 
-##Config
+## Config
 By default, everything is turned on but the script won't execute unless it finds the GET parameter
 `508` in the URL. This allows simple toggling during development.
 
@@ -48,6 +48,6 @@ Option | Default | Description
 "url-parameter"              | "508"      | Sets the URL parameter to enable 508 view. Ignored if `enable-via-url` is false.
 "body-class"                 | "test-508" | Sets the CSS class that gets added to the body to let you write specific styles for 508 mode.
 
-##Warning
+## Warning
 This tool is just meant to help out during the development process. It is not tested across many 
 browsers and shouldn't be used in production for any reason.
