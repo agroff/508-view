@@ -5,18 +5,18 @@ import StyleHelper from "./features/StyleHelper";
 
 export default class ScreenReaderView {
 
-    constructor(config) {
+    constructor(config = {}) {
         this.config = Object.assign({
-            "display-aria-visible"       : true, //done
-            "highlight-aria-invisible"   : true, //todo
-            "hide-visual-elements"       : true, //done
-            "display-image-alts"         : true, //done
-            "display-missing-image-alts" : true, //done
-            "display-sr-only"            : true, //done
-            "use-helper-styles"          : true, //todo
-            "enable-via-url"             : true, //done
-            "url-parameter"              : "508", //done
-            "body-class"                 : "test-508", //done
+            "display-aria-visible"       : true,
+            "highlight-aria-invisible"   : true,
+            "hide-visual-elements"       : true,
+            "display-image-alts"         : true,
+            "display-missing-image-alts" : true,
+            "display-sr-only"            : true,
+            "use-helper-styles"          : true,
+            "enable-via-url"             : true,
+            "url-parameter"              : "508",
+            "body-class"                 : "test-508",
         }, config);
     }
 
